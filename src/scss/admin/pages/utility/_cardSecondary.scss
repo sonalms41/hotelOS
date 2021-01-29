@@ -1,0 +1,8 @@
+.card-secondary {
+    background-color: $color-secondary-1;
+    @include border-r-sm;
+    width: 100%;
+    padding: 1rem;
+    min-height: 10.6rem;
+    margin-bottom: 2rem;
+}

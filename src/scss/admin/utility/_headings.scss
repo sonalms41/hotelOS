@@ -1,0 +1,28 @@
+#admin-page-main,
+#admin-page-header {
+    .heading-primary {
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: $color-best;
+        line-height: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .heading-secondary {
+        font-size: 2.4rem;
+        font-weight: 500;
+        color: $color-best;
+        margin-bottom: 1rem;
+    }
+
+    .heading-tertiary {
+        font-size: 1.8rem;
+        display: inline-block;
+        font-weight: 500;
+        margin-bottom: 1rem;
+
+        a {
+            font-size: inherit;
+        }
+    }
+}

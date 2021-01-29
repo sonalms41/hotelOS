@@ -1,0 +1,38 @@
+.admin-btn {
+    @include border-r-sm;
+    padding: 1rem 3rem;
+    color: $color-best;
+    font-size: 1.4rem;
+    outline: none;
+    border: none;
+
+    height: 4.7rem;
+    display: inline-block;
+    @include transition-delay-sm;
+
+    &:hover {
+        background-color: $color-primary-1;
+    }
+
+    &:focus,
+    &:hover {
+        outline: none;
+    }
+}
+
+.admin-btn--primary {
+    background-color: $color-primary-1;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.admin-btn--secondary {
+    background-color: $color-secondary-3;
+    color: $color-best;
+
+    &:hover {
+        background-color: $color-addition-3;
+    }
+}

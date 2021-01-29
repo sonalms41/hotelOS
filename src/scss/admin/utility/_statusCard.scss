@@ -1,0 +1,22 @@
+// STATUS-CARD
+#admin-page-main {
+	.status-card {
+		@include border-r-sm;
+		min-height: 15rem;
+		display: flex;
+		padding: 2.5rem;
+		align-items: center;
+		justify-content: flex-start;
+
+		&__col-1 {
+			margin-right: 2rem;
+		}
+		&__col-2 {
+			h2 {
+			}
+			p {
+				font-size: 1.7rem;
+			}
+		}
+	}
+}

@@ -1,0 +1,318 @@
+// ADMIN-DASHBOARD >> MASTER
+.admin-master {
+	.content-header {
+		margin-bottom: 2.5rem;
+	}
+	.card-primary {
+		background-color: $color-secondary-2;
+		padding: 2.5rem;
+	}
+
+	.heading-tertiary {
+		border-bottom: none !important;
+		margin-bottom: 2rem;
+		font-size: 1.6rem !important;
+	}
+	// MASTER MARKET
+	.master-market {
+		.card-primary {
+			.heading-tertiary {
+				margin-bottom: 1.5rem !important;
+				display: block !important;
+			}
+
+			h4 {
+				font-size: 1.4rem;
+				margin-bottom: 3rem;
+				font-weight: normal;
+			}
+			.view-more {
+				font-size: 1.4rem;
+				color: #6258d4;
+				text-decoration: underline;
+				display: inline-block;
+			}
+		}
+	}
+
+	// NAV
+	.admin-master-nav {
+		width: 100;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		flex-flow: row wrap;
+		margin-bottom: 2rem;
+
+		background-color: $color-secondary-2;
+		border: 1px solid $color-secondary-7;
+		width: 100%;
+		padding: 1.5rem 2.5rem;
+		@include border-r-sm;
+
+		li {
+			padding-right: 2rem;
+
+			&:last-child {
+				padding-right: 0;
+			}
+
+			color: $color-best;
+
+			a {
+				padding: 1rem 1.5rem;
+			}
+
+			a.active {
+				background-color: $color-primary-1;
+			}
+		}
+	}
+
+	// TABLE
+	.admin-table {
+		.table__col-edit,
+		.table__col-delete {
+			position: relative;
+		}
+	}
+
+	.table__col-groupaction {
+		a {
+			cursor: pointer;
+			@include transition-delay-sm;
+
+			//&:hover {
+			//	opacity: 0.7;
+			//}
+		}
+	}
+
+	// Board type
+	.admin-table--masterboardtype {
+		.table__col-1 {
+		}
+
+		.table__col-2 {
+			width: 35%;
+		}
+
+		.table__col-3 {
+			width: 20%;
+		}
+
+		.table__col-4 {
+			width: 25%;
+		}
+
+		.table__col-5 {
+			width: 10%;
+			text-align: right;
+		}
+	}
+
+	// Occupancy
+	.admin-table--masteroccupancy {
+		.table__col-1 {
+		}
+
+		.table__col-2 {
+			width: 40%;
+		}
+
+		.table__col-3 {
+			width: 40%;
+		}
+
+		.table__col-4 {
+			width: 10%;
+			text-align: right;
+		}
+	}
+
+	// Hotel-group
+	.admin-table--masterhotelproperty {
+		.table__col-1 {
+		}
+
+		.table__col-2 {
+			width: 50%;
+		}
+
+		.table__col-3 {
+			width: 30%;
+		}
+
+		.table__col-4 {
+			width: 10%;
+			text-align: right;
+		}
+	}
+
+	// Meal ages
+	.admin-master-mealages-body {
+		.admin-form__group-multiple {
+			.admin-form__group {
+				width: 47%;
+			}
+		}
+
+		.admin-table--mastermealages {
+			.table__col-1 {
+			}
+
+			.table__col-2 {
+				width: 35%;
+			}
+
+			.table__col-3 {
+				width: 20%;
+			}
+
+			.table__col-4 {
+				width: 25%;
+			}
+
+			.table__col-5 {
+				width: 10%;
+				text-align: right;
+			}
+		}
+	}
+
+	// Room-view
+	.admin-table--masterroomview,
+	.admin-table--masterpayment,
+	.admin-table--masterlanguage {
+		.table__col-1 {
+		}
+
+		.table__col-2 {
+			width: 50%;
+		}
+
+		.table__col-3 {
+			width: 20%;
+		}
+
+		.table__col-4 {
+			width: 20%;
+			text-align: right;
+		}
+	}
+
+	.admin-toggle-switch
+		.admin-toggle-switch__checkbox:checked
+		~ .admin-toggle-switch__label:before {
+		background: #3e4558;
+	}
+
+	// Room-config
+	.admin-room-config {
+		.anchor {
+			color: #55c779;
+			&:hover {
+				color: #fff;
+			}
+		}
+		.subroom-list {
+			width: 100%;
+			.sub-room-tr {
+				border: none;
+				padding: 0;
+				margin: 0;
+				padding: 0.3rem 0.7rem;
+				border-radius: 0;
+				-webkit-border-radius: 0;
+				-moz-border-radius: 0;
+				-ms-border-radius: 0;
+				-o-border-radius: 0;
+				&:hover {
+					background-color: #3e4558;
+					color: #55c779;
+					.admin-confirmation-dialog {
+						color: #fff;
+					}
+				}
+			}
+			.sub-room-td {
+				width: 100%;
+			}
+		}
+		// Table
+		.admin-table {
+			&--roomconfig {
+				.table__col-1 {
+					width: 10%;
+				}
+				.table__col-2 {
+					width: 30%;
+				}
+				.table__col-3 {
+					width: 20%;
+				}
+				.table__col-4 {
+					width: 40%;
+				}
+			}
+		}
+	}
+
+	// Modal
+	.modal-room-config {
+		.select-room {
+			width: 100%;
+			padding: 3rem 2rem 1rem;
+			border: 1px solid #31394e;
+			background-color: #2b3244;
+			@include border-r-sm;
+			color: #eeeeee;
+		}
+		.room-config {
+			&__cateogory {
+				margin-bottom: 2rem;
+				.admin-form__group {
+					width: 49%;
+					margin-bottom: 0;
+				}
+			}
+		}
+		.admin-modal__wrapper {
+			width: 50%;
+			margin: auto;
+			position: relative;
+			.close-modal {
+				right: -4rem;
+			}
+		}
+		.anchor {
+			color: #55c779;
+		}
+
+		.room {
+			border-bottom: 1px solid #2b3244;
+			margin-bottom: 2rem;
+			padding-bottom: 1rem;
+			&:last-child {
+				border-bottom: none !important;
+				display: none !important;
+			}
+			.admin-form__group {
+				margin-bottom: 0;
+			}
+			.remove-0 {
+				display: none;
+			}
+			.anchor {
+				&--remove {
+					color: #919ba3;
+				}
+			}
+		}
+		.control {
+			&--btm {
+				margin-bottom: 2rem;
+			}
+		}
+	}
+}

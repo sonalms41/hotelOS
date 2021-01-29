@@ -1,0 +1,129 @@
+/*** COLUMN-WRAPPER
+* .col-wrapper :: it wraps the .col-item 
+*/
+.col-wrapper {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+
+    @include respond-mediaQuery(phone) {
+        flex-flow: column;
+    }
+}
+
+// clear margin-lef and margin-right
+.col-wrapper--mg-clear {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/*** COLUMN-ITEM
+** .col-item
+*	apply padding left and right on each column
+*/
+.col-item {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    position: relative;
+}
+
+// clear padding-lef and padding-right
+.col-item--pd-clear {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+// segement column into 12 sector 
+// apply column class name based on BEM naming convention (modifier of .col-item)
+
+.col-item--lg-1 {
+    flex-basis: 8.33333%;
+    flex: 0 0 8.33333%;
+    width: 8.33333%;
+}
+
+.col-item--lg-2 {
+    flex-basis: 16.66666%;
+    flex: 0 0 16.66666%;
+    width: 16.66666%;
+}
+
+.col-item--lg-3 {
+    flex-basis: 25%;
+    flex: 0 0 25%;
+    width: 25%;
+}
+
+.col-item--lg-4 {
+    flex-basis: 33.33333%;
+    flex: 0 0 33.33333%;
+    width: 33.33333%;
+}
+
+.col-item--lg-5 {
+    flex-basis: 41.66666%;
+    flex: 0 0 41.66666%;
+    width: 41.66666%;
+}
+
+.col-item--lg-6 {
+    flex-basis: 50%;
+    width: 50%;
+    flex: 0 0 50%;
+}
+
+.col-item--lg-7 {
+    flex-basis: 58.33333%;
+    width: 58.33333%;
+    flex: 0 0 58.33333%;
+}
+
+.col-item--lg-8 {
+    flex-basis: 66.66666%;
+    width: 66.66666%;
+    flex: 0 0 66.66666%;
+}
+
+.col-item--lg-9 {
+    flex-basis: 75%;
+    width: 75%;
+    flex: 0 0 75%;
+}
+
+.col-item--lg-10 {
+    flex-basis: 83.333333%;
+    width: 83.333333%;
+    flex: 0 0 83.333333%;
+}
+
+// Column width in phone screen item -lg-100%
+.col-item--lg-1,
+.col-item--lg-2,
+.col-item--lg-3,
+.col-item--lg-4,
+.col-item--lg-5,
+.col-item--lg-6 {
+    @include respond-mediaQuery(phone) {
+        width: 100%;
+    }
+}
+
+// create a fragment column
+// intention of this column is to just wrap the content
+
+.col-fragment {
+    flex-basis: auto;
+}
+
+
+// inline background image
+.col-inline-bg{
+    background-size: cover;
+    width: 100%;
+    min-height: 15rem;
+    @include border-r-sm;
+}
+

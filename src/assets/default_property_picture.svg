@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" id="svg2162" viewBox="0 0 64 64" version="1.1">
+  <title id="title3622">netalloy apartment 2.2</title>
+  <defs id="defs2164">
+    <filter id="filter4137">
+      <feGaussianBlur id="feGaussianBlur4139" stdDeviation="0.53808082"/>
+    </filter>
+    <filter id="filter5144" y="-.095606" width="1.3752" x="-.18762" height="1.1912">
+      <feGaussianBlur id="feGaussianBlur5146" stdDeviation="1.2099078"/>
+    </filter>
+    <filter id="filter5326" y="-.085542" width="1.3357" x="-.16787" height="1.1711">
+      <feGaussianBlur id="feGaussianBlur5328" stdDeviation="1.0825491"/>
+    </filter>
+    <filter id="filter6341" y="-.075579" width="1.2955" x="-.14774" height="1.1512">
+      <feGaussianBlur id="feGaussianBlur6343" stdDeviation="0.76781256"/>
+    </filter>
+    <filter id="filter7360" y="-.11589" width="1.4531" x="-.22653" height="1.2318">
+      <feGaussianBlur id="feGaussianBlur7362" stdDeviation="0.88759353"/>
+    </filter>
+  </defs>
+  <g id="layer1">
+    <rect id="rect3618" opacity="0" height="63.19" width="63.19" y=".40491" x=".40496" stroke-width=".80991"/>
+    <rect id="rect5330" stroke-linejoin="round" transform="matrix(1.6336 0 0 1.45 -19.407 -13.999)" ry="1.5797" height="24.182" filter="url(#filter6341)" width="12.273" stroke="#866969" y="26" x="32.682" stroke-width=".2" fill="#5d6c53"/>
+    <rect id="rect2172" stroke-linejoin="round" ry=".44514" height="35.064" width="20.05" stroke="#866969" y="22.911" x="33.182" stroke-width="1.0773" fill="#00d400"/>
+    <rect id="rect6345" stroke-linejoin="round" transform="matrix(1.6336 0 0 1.45 -19.407 -13.999)" ry="1.191" height="18.231" filter="url(#filter7360)" width="9.2529" stroke="#866969" y="28.43" x="33.701" stroke-width=".15078" fill="#0f0"/>
+    <rect id="rect8357" height="5.1373" width="3.5474" y="32.489" x="46.393" stroke-width="0" fill="#fff"/>
+    <rect id="rect2170" stroke-linejoin="round" transform="matrix(1.6336 0 0 1.45 -19.407 -13.999)" ry="2.3636" height="36.182" filter="url(#filter4137)" width="18.364" stroke="#866969" y="14" x="15.636" stroke-width=".4" fill="#6c5d53"/>
+    <rect id="rect3146" stroke-linejoin="round" ry="1.5818" height="52.464" width="30" stroke="#8f8c8c" y="6.5914" x="6.1374" stroke-width=".93436" fill="#edd400"/>
+    <rect id="rect4141" stroke-linejoin="round" transform="matrix(1.6336 0 0 1.45 -19.407 -13.999)" ry="1.976" height="30.247" filter="url(#filter5144)" width="15.352" stroke="#866969" y="17.167" x="17.142" stroke-width=".034" fill="#d4aa00"/>
+    <rect id="rect5148" stroke-linejoin="round" transform="matrix(1.6336 0 0 1.45 -19.407 -13.999)" ry="1.976" height="30.247" filter="url(#filter5326)" width="15.352" stroke="#866969" y="17.167" x="17.142" stroke-width=".034" fill="#ffd42a"/>
+    <rect id="rect7364" stroke-linejoin="round" ry="0" height="7.9002" width="6.4529" stroke="#866969" y="50.07" x="17.317" stroke-width=".8071" fill="#6c6753"/>
+    <rect id="rect7366" height="5.1373" width="3.5474" y="17.989" x="10.826" stroke-width="0" fill="#fff"/>
+    <rect id="rect7370" height="5.1373" width="3.5474" y="17.989" x="16.987" stroke-width="0" fill="#fff"/>
+    <rect id="rect7372" height="5.1373" width="3.5474" y="17.989" x="23.149" stroke-width="0" fill="#fff"/>
+    <rect id="rect7374" height="5.1373" width="3.5474" y="26.689" x="10.826" stroke-width="0" fill="#fff"/>
+    <rect id="rect7376" height="5.1373" width="3.5474" y="26.689" x="16.987" stroke-width="0" fill="#fff"/>
+    <rect id="rect7378" height="5.1373" width="3.5474" y="26.689" x="23.149" stroke-width="0" fill="#fff"/>
+    <rect id="rect7380" height="5.1373" width="3.5474" y="35.389" x="10.826" stroke-width="0" fill="#fff"/>
+    <rect id="rect7382" height="5.1373" width="3.5474" y="35.389" x="16.987" stroke-width="0" fill="#fff"/>
+    <rect id="rect7384" height="5.1373" width="3.5474" y="35.389" x="23.149" stroke-width="0" fill="#fff"/>
+    <rect id="rect8355" height="5.1373" width="3.5474" y="32.489" x="40.232" stroke-width="0" fill="#fff"/>
+    <rect id="rect8359" height="5.1373" width="3.5474" y="9.2889" x="10.826" stroke-width="0" fill="#fff"/>
+    <rect id="rect8361" height="5.1373" width="3.5474" y="9.2889" x="16.987" stroke-width="0" fill="#fff"/>
+    <rect id="rect8363" height="5.1373" width="3.5474" y="9.2889" x="23.149" stroke-width="0" fill="#fff"/>
+  </g>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>netalloy apartment</dc:title>
+        <dc:date>2010-04-04T20:40:54</dc:date>
+        <dc:description>icon, real estate clipart in public domain by netalloy</dc:description>
+        <dc:source>http://openclipart.org/detail/37231/netalloy-apartment-by-netalloy</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>netalloy</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>Real Estate</rdf:li>
+            <rdf:li>apartment</rdf:li>
+            <rdf:li>building</rdf:li>
+            <rdf:li>clip art</rdf:li>
+            <rdf:li>clipart</rdf:li>
+            <rdf:li>construction</rdf:li>
+            <rdf:li>property</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

@@ -1,0 +1,182 @@
+.admin-prop-reconcilation{
+    .currency{
+        font-size: 1rem;
+color: #777777;
+display: inline-block;
+margin-right: 1rem;
+
+    }
+    table{
+        td{
+            span{
+                font-size: 1rem;
+                color: #777777;
+            }
+        }
+    }
+    .card-primary{
+        background-color: #252b3b !important;
+        margin-bottom: 2rem;
+        padding: 2rem !important;
+    }
+    .reconc-nav{
+        padding: 1.5rem 2rem !important;
+        .react-tabs__tab-list{
+            margin: 0;
+            border-bottom: none;
+.react-tabs__tab{
+    border: none;
+    color: #fff;
+    line-height: initial;
+    font-size: 1.4rem;
+    padding: 1rem 1.5rem;
+    @include border-r-0;
+
+    &--selected{
+        background-color: #5664d2;
+
+    }
+}
+        }
+    }
+    .reconc-overview{
+     
+        &__wrapper{
+            background: #2b3244;
+            border: 1px solid #31394e;
+            padding: 1.5rem;
+            width: 35%;
+            margin-top: 2.5rem;
+            @include border-r-sm;
+        }
+        &__ul{
+            li{
+                font-size: inherit;
+            color: #fff;
+            margin-bottom: 1.5rem;
+            border-bottom: 1.5px solid #31394e;
+            padding-bottom: 1rem;
+            &:last-child{
+                margin-bottom: 2.5rem;
+            }
+            span{
+                display: inline-block;
+                text-align: right;
+
+            }
+                .li-left{
+                    width: 60%;
+                }
+                .li-right{
+                    width: 40%;
+                }
+                
+            }
+        }
+
+    }
+}
+
+.admin-prop-reconcilation{
+  
+    .reconc-report {
+        &__filter{
+            padding: 1.5rem 2.5rem !important;
+            .field-wrapper{
+                margin: 0;
+                padding-right: 2rem;
+               label,input {color: #fff;}
+                label{
+                    color: #777777;
+                    font-size: 1.3rem;
+                }
+                input{
+                    width: 100%;
+                padding: 2.3rem 1.5rem;
+                border: 1px solid #31394e;
+                background-color: #2b3244;
+                border-radius: 4px;
+                -webkit-border-radius: 4px;
+                -moz-border-radius: 4px;
+                -ms-border-radius: 4px;
+                -o-border-radius: 4px;
+                color: #eeeeee;
+
+                }
+            }
+        }
+        &__data{}
+
+        table{
+            th{
+                padding-right: 1rem;
+                &:last-child{
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}
+
+.admin-prop-reconcilation{
+    .reconc-history-header{
+        margin-bottom: 2rem;
+        width: 40%;
+    .rec-modal-title{
+        .title-spn{
+            width: 40%;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+   
+    }
+}
+    .admin-reconc-history{
+        table{
+            tr{
+                td:first-child{
+cursor: pointer;
+text-decoration: underline;
+
+&:hover{
+    color: #5664d2 !important;
+}
+                }
+            }
+        }
+    }
+}
+
+// Modal
+.modal-reconcilation{
+    .entry-ul{
+        margin-bottom: 2.5rem;
+        li{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            color: #919ba3;
+            .title{
+                width:50%;
+                display: inline-block;
+            }
+            .currency{
+                margin-left: 1rem;
+            }
+        }
+    }
+    .admin-modal__wrapper{
+        width: 40rem;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       @include transform-xy-m50percent;
+
+    }
+    .close-modal{
+        top: -1rem !important;
+        right: -1rem !important;
+    }
+}

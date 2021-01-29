@@ -1,0 +1,67 @@
+@keyframes showAddressList {
+    0% {
+
+        visibility: hidden;
+        transform: translate(-50%, -100%);
+        -webkit-transform: translate(-50%, -100%);
+        -moz-transform: translate(-50%, -100%);
+        -ms-transform: translate(-50%, -100%);
+        -o-transform: translate(-50%, -100%);
+    }
+
+    50% {
+        height: inherit;
+        width: inherit;
+        visibility: visible;
+        transform: translate(-50%, 20%);
+        -webkit-transform: translate(-50%, 20%);
+        -moz-transform: translate(-50%, 20%);
+        -ms-transform: translate(-50%, 20%);
+        -o-transform: translate(-50%, 20%);
+    }
+
+    100% {
+        height: inherit;
+        width: inherit;
+
+        visibility: visible;
+        transform: translate(-50%, 5%);
+        -webkit-transform: translate(-50%, 5%);
+        -moz-transform: translate(-50%, 5%);
+        -ms-transform: translate(-50%, 5%);
+        -o-transform: translate(-50%, 5%);
+
+    }
+
+}
+
+@keyframes hideAddressList {
+    0% {
+        visibility: visible;
+        @include transform-xy-minus50percent;
+    }
+
+    50% {
+        visibility: visible;
+        opacity: 0.9;
+        transform: translateY(20%);
+        -webkit-transform: translateY(20%);
+        -moz-transform: translateY(20%);
+        -ms-transform: translateY(20%);
+        -o-transform: translateY(20%);
+        height: auto;
+        width: auto;
+    }
+
+    100% {
+        visibility: hidden;
+        transform: translateY(-100%);
+        -webkit-transform: translateY(-100%);
+        -moz-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        -o-transform: translateY(-100%);
+        height: auto;
+        width: auto;
+    }
+
+}

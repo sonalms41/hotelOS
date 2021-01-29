@@ -1,0 +1,148 @@
+.admin-hotel-register {
+    nav.header_wrapper {
+        display: none;
+    }
+
+    .form-control:focus {
+        border-color: $color-primary-1 !important;
+    }
+
+    .form-wrapper {
+        .head_form {
+            padding-bottom: 0;
+
+            h3 {
+                font-size: 1.6rem;
+                font-weight: 600;
+            }
+        }
+
+        .field-wrapper {
+            //label,
+            //input,
+            //select {
+            //    color: $color-best;
+            //}
+
+            select {
+                height: 3.5rem;
+            }
+            .eye-password{
+                top: 53%;
+                right: 3rem;
+            }
+        }
+    }
+
+    .col-md-6,
+    .col-12 {
+        padding: 0;
+    }
+
+    .main-heading {
+        margin: 0;
+        padding: 0;
+
+        h4 {
+            color: $color-best;
+            font-size: 2.4rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .register-wrapper .container {
+        margin: 0;
+        max-width: 100% !important;
+        padding: 0;
+
+        .form-wrapper {
+            ::placeholder {
+                color: $color-tertiary-5;
+            }
+        }
+
+        .row {
+            margin: 0;
+            width: 100%;
+
+            .col-md-6 {
+                justify-content: space-between;
+
+                .field-wrapper {
+                    padding-right: 2rem;
+                    width: 100%;
+                }
+
+                &:first-child {
+                    flex-direction: column;
+                    .form-wrapper,
+                    .head_form {
+                        background-color: $color-secondary-2;
+                    }
+
+                    .form-wrapper {
+                        margin-bottom: -1rem;
+                        input,
+                        select {
+                            background-color: $color-secondary-3;
+                            border: 1px solid #31394E;
+                            width: 100%;
+                            outline: $color-primary-1;
+                        }
+
+                        .col-md-12 {
+                            input {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+
+                &:last-child {
+                    .form-wrapper,
+                    .head_form {
+                        background-color: $color-secondary-6;
+                    }
+
+                    .form-wrapper {
+                        input,
+                        select {
+                            background-color: $color-secondary-7;
+                            border: 1px solid #31394E;
+                            width: 100%;
+                            outline: $color-primary-1;
+                        }
+                    }
+                }
+            }
+
+            .col-md-6,
+            .col-md-12 {
+                padding: 0;
+                margin: 0;
+                font-size: 1.4rem;
+
+                .form_wrap {
+                    .md-checkbox {
+                        display: flex;
+
+                        input {
+                            width: auto !important;
+                            align-items: center;
+                        }
+                    }
+                }
+
+                .switch-field {
+                    //label {
+                    //    color: $color-secondary-1 !important;
+                    //}
+                }
+
+
+
+
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.flex-jfs-ac {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.flex-jfe-ac {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.flex-jsb-ac {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-jc-afs--fd-column {
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+}

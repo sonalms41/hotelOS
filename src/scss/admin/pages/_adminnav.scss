@@ -1,0 +1,46 @@
+// SIDEBAR
+.adminnav {
+    padding: 1.5rem;
+    width: 100%;
+
+
+
+    .adminnav-list {
+        display: flex;
+        width: 100%;
+        flex-flow: column;
+
+        &__item {
+            color: inherit;
+
+            a {
+                min-height: 9.3rem;
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+                justify-content: center;
+                background-color: $color-secondary-1;
+                padding: 1rem;
+                color: $color-tertiary-1;
+                font-size: 1.4rem;
+                margin-bottom: 1rem;
+                @include border-r-sm;
+
+                .adminnav-icon {
+                    font-size: 2rem;
+                    margin-bottom: 1rem;
+                }
+
+                .adminnav-title {
+                    text-align: center;
+                    font-size: 1.4rem;
+                }
+
+                &.active {
+                    background-color: $color-primary-1;
+                    color: $color-best;
+                }
+            }
+        }
+    }
+}

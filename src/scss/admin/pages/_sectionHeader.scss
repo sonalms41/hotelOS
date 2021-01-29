@@ -1,0 +1,258 @@
+// SECTION-HEADER
+.section-header {
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .section__title {
+        margin-bottom: 2.5rem;
+    }
+
+    .section__navigate {
+        display: flex;
+
+        li {
+            position: relative;
+            z-index: 500;
+            color: $color-best;
+            padding-right: 3rem;
+            font-size: 1.4rem;
+
+            &::before {
+                content: "";
+                position: absolute;
+                right: 1rem;
+                z-index: 600;
+                top: 50%;
+                @include transform-y-m50percent;
+                background-image: url("./../../../assets/images/icon/icon-navigate-next.svg");
+                background-repeat: no-repeat;
+                height: 1rem;
+                width: 0.7rem;
+            }
+
+            &:last-child {
+                color: $color-tertiary-3;
+
+                &::before {
+                    content: none;
+                }
+            }
+
+            &.active {
+                color: $color-tertiary-3;
+            }
+        }
+    }
+}
+
+// SECTION-HEADER FOR PROPERTY-DETAIL
+.property-detail {
+    .section-header {
+        align-items: flex-end;
+    }
+}
+
+// SECTION-HEADER-RIGHT
+.section-header {
+    .section-header__right {
+        display: flex;
+        align-items: center;
+        width: 58%;
+        justify-content: space-between;
+
+        // Toggle map
+        .section-header__togglemap {
+            width: 20%;
+            display: flex;
+            align-items: center;
+
+            .toggle-txt {
+                padding-right: 1rem;
+                font-family: inherit;
+            }
+
+            .toggle-map {
+                position: relative;
+                z-index: 500;
+
+                height: 2.6rem;
+                width: 5.6rem;
+
+                &__checkbox {
+                    display: none;
+                }
+
+                &__label {
+                    cursor: pointer;
+
+                    &::before {
+                        content: "";
+                        height: 100%;
+                        width: 100%;
+                        background: $color-best;
+                        border-radius: 500rem;
+                        -webkit-border-radius: 500rem;
+                        -moz-border-radius: 500rem;
+                        -ms-border-radius: 500rem;
+                        -o-border-radius: 500rem;
+                        display: block;
+                        position: absolute;
+                        z-index: 600;
+                        left: 0;
+                        top: 0;
+
+                        @include transition-delay-sm;
+                    }
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        width: 2.4rem;
+                        height: 2.4rem;
+                        background: $color-primary-1;
+                        z-index: 2;
+                        left: 0;
+                        top: 0;
+                        z-index: 700;
+                        @include border-r-lg;
+                        margin: 1px;
+                        @include transition-delay-sm;
+                    }
+                }
+
+                .toggle-map__checkbox:checked~.toggle-map__label:after {
+                    left: 3rem !important;
+                }
+
+                .toggle-map__checkbox:checked~.toggle-map__label:before {
+                    background: $color-secondary-3;
+                }
+            }
+        }
+
+        // Search Property
+        .section-header__search {
+            width: 50%;
+
+            input {
+                background-color: $color-secondary-1;
+                border: 1px solid #707070;
+                height: 4.8rem;
+                @include border-r-sm;
+                color: $color-best;
+
+                &:focus {
+                    border: 1px solid #707070;
+                }
+            }
+        }
+
+        // Sort Property
+        .section-header__sort {
+            display: flex;
+            align-items: center;
+            width: 35%;
+            justify-content: flex-end;
+
+            .title {
+                margin-right: 1rem;
+            }
+
+            .property-sort-select {
+                color: $color-best;
+                border: 1px solid #707070;
+
+                &__option {
+                    @include transition-delay-sm;
+
+                    &:hover {
+                        background-color: $color-primary-1;
+                    }
+                }
+
+                @include border-r-sm;
+
+                &__control {
+                    @include border-r-sm;
+                }
+
+                &__value-container {
+                    &::before {
+                        content: url("./../../../assets/images/icon/icon-arrow-dropdown-2.svg");
+                        position: absolute;
+                        width: 1rem;
+                        height: 1rem;
+                        right: 1rem;
+                        top: 0;
+                    }
+                }
+
+                &__indicators {
+                    display: none !important;
+                }
+            }
+
+            .sort-list {
+                width: 16rem;
+                color: $color-best;
+
+                .select__control.css-yk16xz-control {
+                    border: 1px solid #707070;
+                    @include border-r-sm;
+                    outline: none;
+                }
+            }
+        }
+
+        // Change status of property
+        .section-header__set-status {
+            display: flex;
+
+            li {
+                @include border-r-sm;
+                padding: 0.7rem 1.5rem;
+                padding-right: 1rem;
+                margin-right: 1rem;
+                position: relative;
+                cursor: pointer;
+
+                &.verify {
+                    background-color: $color-primary-1;
+                }
+
+                &.reject {
+                    background-color: $color-addition-3;
+                }
+
+                &.block {
+                    background-color: $color-secondary-3;
+                }
+
+                &.report {
+                    background-color: $color-addition-6;
+                }
+
+                &.deactivate {
+                    background-color: #6c757d;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+
+            .prop-verify {}
+
+            .prop-reject {}
+        }
+    }
+
+    .change-property-status {
+        height: 100% !important;
+        width: 30% !important;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}

@@ -1,0 +1,789 @@
+// Amenities and facilities
+#admin-page-main {
+	.main_tile {
+		background: #252b3b;
+		border: 1px solid #2b3244;
+		color: #eeeeee;
+		padding: 2rem;
+		margin-bottom: 2rem;
+	}
+	//  MANAGEMENT
+	.admin-prop-mgmt {
+		select,
+		input {
+			width: 100%;
+			border: 1px solid #31394e;
+			background-color: #2b3244;
+			color: #eeeeee;
+			height: 5rem;
+			box-shadow: none !important;
+			@include border-r-sm;
+
+			outline: none;
+			&:focus {
+				border: 1px solid #5664d2;
+				outline: none !important;
+			}
+		}
+		table {
+			thead {
+				tr {
+					background-color: #3e4558;
+					border: none;
+					th {
+						font-weight: normal;
+						color: #fff;
+					}
+				}
+			}
+			tbody {
+				tr {
+					background: #2b3244;
+					border: 1px solid #31394e;
+					td {
+						color: #fff;
+					}
+				}
+			}
+		}
+		// PROPERTY
+		&--property {
+			.dashboard_wrapper {
+				border: none !important;
+			}
+			.file-ext-info {
+				font-size: 1.2rem;
+				font-weight: normal;
+			}
+			.main_tile {
+				display: none;
+			}
+			.tab {
+				margin-bottom: 0 !important;
+			}
+			.dashboard_wrapper {
+				background: none;
+				border: none;
+			}
+			.drag-drop-box {
+				background-color: #2b3244 !important;
+				opacity: 1;
+				height: 8rem;
+				padding-top: 1.5rem;
+				position: relative;
+				z-index: 1000;
+				.drag-drop-area {
+					height: auto !important;
+					&:hover {
+						background-color: #2b3244;
+					}
+				}
+				.drag-drop-infotxt {
+					margin-top: 1.5rem !important;
+					//margin: 0;
+					//margin-top: 0 !important;
+					//position: absolute;
+					//z-index: 1500;
+					//top: 50%;
+					//left: 50%;
+					//@include transform-xy-m50percent;
+				}
+			}
+			table {
+				th,
+				td {
+					border: none !important;
+					font-size: 1.4rem;
+					padding-top: 1rem;
+					padding-bottom: 1rem;
+				}
+			}
+		}
+
+		// FINANCE
+		&--finance {
+			.main_tile,
+			.border-bottom {
+				display: none;
+			}
+			.form-inline {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				.field-wrapper {
+					width: auto;
+				}
+
+				.col-auto {
+					&--filter {
+					}
+					&--pdf {
+					}
+					&--excel {
+					}
+				}
+				.btn_addo {
+					margin-top: 0 !important;
+					margin-left: 1rem;
+				}
+			}
+		}
+		// DASHBOARD
+		.dashboard_wrapper {
+			background: #252b3b;
+			border: 1px solid #2b3244;
+			.upcoming_details_datewise,
+			.completed_details_datewise,
+			.inhouse_details_datewise {
+				background: #2b3244;
+				border: 1px solid #31394e;
+			}
+		}
+
+		// RATE
+		&--rate {
+			.rate_table_header {
+				border-bottom: 1px solid #2b3244 !important;
+				border-left: 1px solid #2b3244 !important;
+			}
+			.rate_table_restriction_mark {
+				background: linear-gradient(
+					to top left,
+					#252b3b,
+					$color-secondary-2 90%,
+					#ccc 10%
+				);
+			}
+			.rate_header_wrap {
+				background: #252b3b;
+				border: 1px solid #2b3244;
+				color: #eeeeee;
+				margin-bottom: 2.5rem;
+			}
+			.rate_table_checkbox {
+				&:first-child {
+					border: none;
+				}
+			}
+			.rate_tableCalendar {
+			}
+			.bulk_edit_date {
+				border: 1px solid #31394e;
+				background-color: #2b3244;
+				color: #eeeeee;
+			}
+			label {
+				color: #919ba3;
+			}
+			select {
+				color: #fff;
+			}
+			.rate_table_header {
+				.rate_input_no_style {
+					color: #fff;
+				}
+			}
+			.rate_tableMenu,
+			.rate_tableCalendar {
+				background: #252b3b;
+				border: 1px solid #2b3244;
+			}
+			.rate_tableCalendar {
+			}
+		}
+
+		// WALKIN-GUEST
+		&--walkin-guest {
+			.rd_timedate_red {
+				background: #55c779;
+			}
+		}
+
+		// CALENDAR
+		&--calendar {
+			.bulk_edit_date {
+				border: 1px solid #31394e;
+				background-color: #2b3244;
+				color: #eeeeee;
+				&:focus {
+					border-color: #5664d2 !important;
+				}
+			}
+			.main_tile {
+				background: #252b3b;
+				border: 1px solid #2b3244;
+				color: #eeeeee;
+				padding: 2rem;
+				margin-bottom: 2rem;
+			}
+			.custom_calendar_table {
+				table {
+					background: #2b3244 !important;
+					color: #fff;
+					font-weight: 300;
+					font-size: 1.6rem;
+					border: none !important;
+					tr {
+						background: #2b3244;
+						border: 1px solid #31394e;
+						color: #fff;
+						font-weight: 300;
+						font-size: 1.6rem;
+						td:first-child,
+						td,
+						th {
+							background: #2b3244;
+							border: 1px solid #313950;
+						}
+					}
+				}
+			}
+		}
+
+		// FOOD
+		&--food {
+			table {
+				tr {
+					background: #2b3244;
+					border: 1px solid #31394e;
+					td,
+					th {
+						color: #fff;
+					}
+				}
+			}
+			form {
+				.form-check {
+					input {
+						height: 1.5rem;
+						width: 1.5rem;
+					}
+				}
+			}
+			.bulk_edit_text {
+			}
+		}
+
+		// STAFF
+		&--staff {
+			.room_details_datewise {
+				background: #2b3244;
+				border: 1px solid #31394e;
+				&:hover {
+					background: #3e4558;
+				}
+			}
+		}
+
+		// BOOKING
+		&--booking {
+			.tab {
+				.tab_links,
+				.tab_links_active {
+					text-align: center;
+				}
+			}
+			.dashboard_wrapper {
+				background: #252b3b;
+				border: 1px solid #2b3244;
+				.upcoming_details_datewise,
+				.completed_details_datewise,
+				.inhouse_details_datewise {
+					background: #2b3244;
+					border: 1px solid #31394e;
+				}
+			}
+			.rd_timedate_red,
+			.rd_timedate,
+			.rd_timedate_green {
+				background: none !important;
+			}
+		}
+
+		&--dashLanding {
+			.main_tile {
+				display: none;
+			}
+			.sidebar_wrapper {
+				width: 76%;
+			}
+			.panel_checkout {
+				border-bottom: 5px solid #1d222e;
+				padding-bottom: 1.5rem;
+			}
+			.text-primary {
+				color: #5664d2 !important;
+			}
+			.admin-prop-dashboard__dashlanding {
+				.page_contents_pright {
+					width: 76%;
+				}
+			}
+			.progress {
+				background-color: #3e4558;
+				.progress-bar {
+					.text-dark {
+						color: #fff !important;
+					}
+				}
+			}
+		}
+
+		// ROOM
+		&--room {
+			.d-flex {
+				align-items: center;
+			}
+		}
+
+		// PHOTOS
+		&--photos {
+			.dashboard_wrapper {
+				border: none !important;
+			}
+			.main_tile {
+				display: none;
+			}
+			.drag-drop-area {
+				input {
+					height: 10rem !important;
+				}
+			}
+		}
+		// ROOM-MANAGEMENT
+		&--roommgmt {
+			.rm_add_room {
+				background-color: #4db95f;
+				.rm_dashed_area {
+					border: 1px dashed #eee;
+				}
+			}
+			.rm_rn_wrapper {
+				border: 1px solid #31394e;
+				background-color: #2b3244;
+				color: #fff;
+			}
+		}
+
+		// ADD-ROOM
+		&--addroom {
+			.main_tile {
+				display: none;
+			}
+		}
+
+		// ROOM DETAIL
+		&--roomdetail {
+			.row--header {
+				display: flex;
+				align-items: center;
+				label {
+					margin: 0;
+				}
+				input {
+					height: auto !important;
+					min-height: auto !important;
+				}
+				.field-wrapper {
+					padding: 0;
+				}
+			}
+			.col-auto {
+				.form-inline {
+					display: flex;
+					align-items: center;
+
+					.field-wrapper {
+						width: auto;
+						margin: 0;
+					}
+				}
+				p {
+					font-weight: normal !important;
+				}
+			}
+			.sliderRoomStatus {
+				box-shadow: none !important;
+				background-color: #fff;
+				&::before {
+					background-color: #5664d2;
+					top: 3px;
+					left: 9px;
+				}
+			}
+			input[type="checkbox"]:checked + .sliderRoomStatus {
+				background-color: #2b3244;
+				border-color: #2b3244;
+			}
+		}
+	}
+
+	.admin-amenities {
+		.col-md-3 {
+			display: flex;
+			align-items: flex-start !important;
+		}
+		.sub-heading {
+			display: block !important;
+		}
+		input {
+			width: auto !important;
+			min-height: auto !important;
+			margin-right: 2rem !important;
+			display: none !important;
+		}
+		.aminity-list {
+			max-width: auto !important;
+			flex: auto !important;
+			max-width: fit-content !important;
+		}
+		.icon {
+			margin-right: 0.5rem;
+			display: inline-block;
+		}
+		.aminity-item {
+			border: 1px solid #5664d2;
+			background-color: #252b3b;
+			color: #eeeeee;
+			opacity: 0.6;
+			@include border-r-sm;
+			padding: 0.5rem 1.5rem;
+		}
+		input:checked ~ .aminity-item {
+			background: #5664d2;
+			color: #fff !important;
+			opacity: 1;
+		}
+		label {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			cursor: pointer;
+		}
+	}
+}
+
+// ADMIN PROPERTY-MANAGEMENT
+.admin-page-main-wrapper {
+	.sidebar_wrapper {
+		position: static;
+		width: 100%;
+		height: auto;
+
+		.list-menuSidebar {
+			.row {
+				.col-6 {
+					flex: 0 0 auto;
+					max-width: fit-content;
+				}
+			}
+		}
+	}
+
+	.right_panel {
+		z-index: 900;
+		background: #2b3244;
+		border: 1px solid #31394e;
+		box-shadow: none !important;
+		.panel_checkoutHeader {
+			h5 {
+				color: #fff;
+			}
+		}
+		.right_panelContent {
+			margin-top: 10rem !important;
+		}
+	}
+	.intro-x {
+		background: #2b3244;
+		border: 1px solid #31394e;
+	}
+	.box_upcommingcheckout {
+		border-bottom: 1px solid #31394e;
+		box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+	}
+	.field-wrapper {
+		margin-bottom: 2rem;
+		input,
+		select {
+			&:focus {
+				border: 1px solid $color-primary-1 !important;
+				//outline:  1px solid $color-primary-1 !important;
+			}
+		}
+		//.switch-field label{
+		//    color: #2b3244 !important;
+		//    display: inline-flex;
+		//    height: 4rem;
+		//    align-items: center;
+		//    justify-content: center;
+		//    border: none !important;
+		//    border-right: 1px solid rgba(0,0,0,0.2);
+		//    margin-right: -1px !important;
+		//}
+
+		//.switch-field input:checked + label{
+		//    background: $color-primary-1 !important;
+		//    color: #fff !important;
+		//}
+
+		.input-group {
+			display: flex;
+			flex-flow: row;
+		}
+		.row {
+			align-items: center;
+		}
+
+		.btn_eradoImg {
+			height: 4.2rem;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.input-group-prepend {
+			.form-control {
+				min-width: 10rem;
+			}
+		}
+	}
+	.cancellation_wrapper {
+		background: #2b3244;
+		color: #fff !important;
+		border: 1px solid #31394e;
+	}
+	.text-dark {
+		color: #ccc !important;
+	}
+	.admin-prop-mgmt__content {
+		.main_tile {
+			.heading {
+				font-weight: 300;
+			}
+		}
+
+		.sectionPB {
+			padding-bottom: 3rem;
+		}
+
+		.tab {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			flex-flow: row wrap;
+			margin-bottom: 2rem;
+			background-color: #252b3b;
+			border: 1px solid #31394e;
+			width: 100%;
+			padding: 1.5rem 2.5rem;
+			@include border-r-sm;
+
+			.tab_prop_links_active {
+				color: $color-primary-1;
+				border-bottom: 0;
+				padding: 0.8rem 0;
+				margin-right: 2rem;
+				font-weight: normal;
+				float: none;
+				position: relative;
+
+				&::before {
+					content: "";
+					position: absolute;
+					height: 2px;
+					width: 100%;
+					background-color: $color-primary-1;
+					left: 0;
+					bottom: 0.5rem;
+					z-index: 6000;
+				}
+			}
+
+			.tab_links {
+				margin-right: 2rem;
+				float: none;
+				font-weight: normal;
+				font-size: 1.6rem;
+				padding: 0.8rem 1.5rem;
+				margin-right: 2.5rem;
+				&:hover {
+					color: $color-addition-1;
+				}
+			}
+			.tab_links_active {
+				color: $color-addition-1;
+				font-size: inherit;
+				font-family: inherit;
+				border: none !important;
+				background: #6a6ff9;
+				color: #fff;
+				padding: 0.8rem 1.5rem;
+			}
+		}
+
+		.btn_addo {
+			padding: 1.2rem 3rem;
+			color: $color-best;
+			font-size: 1.4rem;
+			outline: none;
+			border: none;
+			display: inline-block;
+			background-color: $color-primary-1;
+		}
+
+		.dashboard_wrapper {
+			border: none;
+
+			h5 {
+				font-weight: 300;
+			}
+			label,
+			input,
+			select,
+			textarea {
+				color: $color-best;
+				font-size: 1.4rem;
+				font-weight: 300;
+			}
+
+			select,
+			input,
+			textarea {
+				background-color: $color-secondary-3;
+				border: 1px solid $color-secondary-7;
+				width: 100%;
+				outline: #5664d2;
+				font-size: 1.3rem;
+				font-weight: 300;
+			}
+			select,
+			input {
+				min-height: 4.5rem;
+			}
+
+			textarea {
+				min-height: 15rem;
+			}
+		}
+	}
+}
+
+// ADMIN PROPERTY-MANAGEMENT HEADER-NAV
+.admin-prop-mgmt {
+	.sidebar_wrapper {
+		background: $color-secondary-2;
+		border: 1px solid $color-secondary-3;
+		color: $color-best;
+		margin-bottom: 2.5rem;
+
+		.list-menuSidebar {
+			margin: 0;
+
+			.row {
+				.col-6 {
+					.list_itemMenu {
+						border: none;
+						margin: 0;
+
+						a {
+							height: auto;
+							padding: 1rem 1.5rem;
+
+							&:hover {
+								color: $color-primary-1;
+							}
+
+							&.dash_selected {
+								background: $color-primary-1;
+							}
+
+							svg {
+								display: none;
+							}
+
+							.sidebar_menuTitle {
+								margin: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// DASH-LANDING
+.admin-prop-mgmt {
+	.progress-bar {
+		.text-dark {
+			color: #2b3244 !important;
+		}
+	}
+	.dashboard_bookingWrapper {
+		background: #2b3244;
+		border: 1px solid #31394e;
+		.completed_details_datewise {
+			box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+			background-color: #252b3b;
+		}
+	}
+	.completed_details_datewise {
+		border-left: 4px solid var(--main-color);
+	}
+	.rd_timedate_green {
+		background: #2b3244;
+	}
+	.rd_timedate {
+		background: #5664d2;
+	}
+	.page_contents_pright {
+		background: $color-secondary-2;
+		border: 1px solid $color-secondary-3;
+		color: $color-best;
+		margin-bottom: 2.5rem;
+		padding: 2rem;
+	}
+
+	.checkin_status {
+		color: $color-best !important;
+	}
+
+	.heading {
+		color: $color-best;
+		font-size: 1.6rem;
+		font-weight: 600;
+	}
+
+	.col-md-4 {
+		.item_dashboardCard {
+			background: #2b3244;
+			border: 1px solid #31394e;
+			border-radius: 0;
+			-webkit-border-radius: 0;
+			-moz-border-radius: 0;
+			-ms-border-radius: 0;
+			-o-border-radius: 0;
+			.card_title h5 {
+				color: #fff;
+			}
+		}
+	}
+
+	.page_contents_pright {
+		.col-md-12 {
+			&.mt-4 {
+				.dashboard_wrapper {
+					background: $color-secondary-2;
+					border: 1px solid $color-secondary-3;
+					color: $color-best;
+					margin-bottom: 2.5rem;
+					padding: 2rem;
+
+					.font-weight-bold {
+						color: $color-best !important;
+					}
+				}
+			}
+		}
+	}
+}

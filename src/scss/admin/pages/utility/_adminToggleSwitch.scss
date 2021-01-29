@@ -1,0 +1,57 @@
+// ADMIN TOGGLE-SWITCH
+.admin-toggle-switch {
+    position: relative;
+    z-index: 500;
+    height: 2.6rem;
+    width: 5.6rem;
+
+    &__checkbox {
+        display: none;
+    }
+
+    &__label {
+        cursor: pointer;
+
+        &::before {
+            content: "";
+            height: 100%;
+            width: 100%;
+            background: $color-best;
+            border-radius: 500rem;
+            -webkit-border-radius: 500rem;
+            -moz-border-radius: 500rem;
+            -ms-border-radius: 500rem;
+            -o-border-radius: 500rem;
+            display: block;
+            position: absolute;
+            z-index: 600;
+            left: 0;
+            top: 0;
+
+            @include transition-delay-sm;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 2.4rem;
+            height: 2.4rem;
+            background: $color-primary-1;
+            z-index: 2;
+            left: 0;
+            top: 0;
+            z-index: 700;
+            @include border-r-lg;
+            margin: 1px;
+            @include transition-delay-sm;
+        }
+    }
+
+    .admin-toggle-switch__checkbox:checked~.admin-toggle-switch__label:after {
+        left: 3rem !important;
+    }
+
+    .admin-toggle-switch__checkbox:checked~.admin-toggle-switch__label:before {
+        background: $color-secondary-3;
+    }
+}

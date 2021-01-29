@@ -1,0 +1,28 @@
+// USER
+.section-user {
+	.users-cards {
+		a {
+			width: 100%;
+		}
+		.card-primary {
+			display: flex;
+			align-items: center;
+		}
+
+		.user-icon {
+			margin-right: 1.5rem;
+		}
+
+		.user-info {
+			font-weight: 500;
+
+			&__no {
+				margin-bottom: 1rem;
+			}
+
+			&__status {
+				font-size: 1.4rem;
+			}
+		}
+	}
+}

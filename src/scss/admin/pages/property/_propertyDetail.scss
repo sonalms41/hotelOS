@@ -1,0 +1,614 @@
+.verified-prop-dashboard {
+    .col-item {
+        margin-bottom: 2rem;
+    }
+
+    .v-prop-dashboard-card {
+        @include border-r-sm;
+        padding: 2rem;
+        font-size: 1.4rem;
+        min-height: 15rem;
+        font-size: 1.4rem;
+
+        a,.anchor,.comt {
+            color: $color-primary-1 !important;
+            text-decoration: underline !important;
+            color: $color-primary-1;
+            cursor: pointer;
+        }
+.comt{
+    text-decoration: none !important;
+}
+        p {
+            margin-bottom: 3rem;
+            font-size: 1.4rem;
+        }
+
+        li {
+            color: inherit;
+        }
+
+        .heading-tertiary {
+            border-bottom: none;
+            margin-bottom: 0.5rem;
+            font-size: 1.6rem;
+        }
+
+        &--revenue {
+            background-color: $color-addition-3;
+
+            a {
+                color: $color-best !important;
+                text-decoration: underline !important;
+            }
+
+            h2 {
+                font-size: 3rem;
+            }
+        }
+
+        &--promotion {
+            background-color: $color-primary-1;
+
+            a {
+                color: $color-best !important;
+                text-decoration: underline !important;
+            }
+
+            h3 {
+                margin-bottom: 3rem;
+            }
+
+            p {
+                margin-bottom: 4rem;
+            }
+        }
+
+        &--edit {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+
+            a {
+                cursor: pointer;
+            }
+        }
+
+        .card-left {
+            margin-right: 1.5rem;
+            width: 4rem;
+            text-align: center;
+        }
+
+        .card-right {}
+
+        .v-prop-sinfo-list {
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 1.5rem;
+
+                &:last-child {
+                    margin-top: 3rem;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.property-detail {
+    li {
+        color: inherit;
+        font-size: inherit;
+    }
+
+    &__item {
+        .detail-item__header {
+            border-bottom: 1px solid $color-secondary-1;
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h2 {
+                margin-bottom: 0;
+            }
+        }
+
+        .detail-item__body {
+            .detail-info {
+                &__row--1 {
+                    margin-bottom: 5rem;
+
+                    .detail-info__img {
+                        height: 11.6rem;
+                        width: 11.6rem;
+                        background-color: $color-best;
+                        @include border-r-lg;
+                    }
+
+                    .detail-info__txt {
+                        .property-title {}
+
+                        .property-address {
+                            font-size: 1.4rem;
+                        }
+                    }
+
+                    .col-wrapper {
+                        align-items: center;
+                    }
+                }
+
+                &__row--2 {
+                    .detail-info__list {
+                        display: flex;
+                        flex-flow: row wrap;
+
+                        .list-primary {
+                            width: 33.3rem;
+
+                            &__left {
+                                &::before {
+                                    right: 30%;
+                                }
+                            }
+                        }
+
+                        .detail-info__name,
+                        .detail-info__value {
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// PROPERTY-DETAIL NAVIGATION
+.property-detail {
+    .property-detail__nav {
+        .card-primary {
+            padding: 0 !important;
+        }
+
+        .prop-nav-item {
+            position: relative;
+            color: inherit;
+
+            a {
+                padding: 2rem 2.5rem;
+                width: 100%;
+                display: inline-block;
+                margin-top: -1px;
+                margin-left: -1px;
+                color: $color-best;
+
+                &.active {
+                    background-color: $color-primary-1;
+                    width: 101%;
+
+                    //position: absolute;
+                    //width: initial;
+                    //left: -1px;
+                    //right: -1px;
+                    //top: -1px;
+                }
+            }
+
+            &.active {
+                position: relative;
+            }
+        }
+    }
+}
+
+// PROPERTY >> PROPERTY-DETAIL >> PROPERTY-AMENITITES
+.property-detail {
+    .property-amenities {
+        table{
+            width: 100%;
+            tr{
+            vertical-align: top;
+            th{
+                font-weight: 600;
+                font-size: 1.4rem;
+            }
+            td {
+                padding: 1rem 0;
+                p{
+                font-size: 1.4rem;
+            }}
+        }
+        }
+        .card-secondary {
+            display: flex;
+            align-items: center;
+        }
+
+        .amenitie {
+            text-align: center;
+            width: 100%;
+
+            &__img {
+                display: inline-block;
+            }
+
+            &__title {
+                text-align: center;
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
+
+// PROPERTY >> PROPERTY-DETAIL >> BANK-DETAIL
+.property-detail {
+    .bank-detail {
+        &__head {
+            margin-bottom: 2rem;
+
+            h3 {
+                margin-bottom: 0.5rem;
+            }
+        }
+
+        &__list {
+            width: 50%;
+        }
+    }
+}
+
+// PROPERTY >> PROPERTY-DETAIL >> PROPERTY-CONTACT
+.property-detail {
+    .property-contact {
+        &__list {
+            .contact-item {
+                margin-bottom: 2rem;
+                display: flex;
+                align-items: flex-start;
+
+                .contact__name,
+                .contact__value {
+                    display: inline-block;
+
+                    .btn {
+                        margin-right: 1.2rem;
+                    }
+                }
+
+                .contact__value {
+                    display: flex;
+                    flex-flow: row wrap;
+
+                    span {
+                        display: block;
+                        margin-right: 2rem;
+                    }
+                }
+
+                .contact__name {
+                    width: 19rem;
+                    position: relative;
+
+                    z-index: 500;
+                    margin-right: 5rem;
+
+                    &::before {
+                        position: absolute;
+                        content: ":";
+                        z-index: 600;
+                        top: 50%;
+                        @include transform-y-m50percent;
+                        right: 0;
+                        width: 0.7rem;
+                        height: 1rem;
+                    }
+                }
+
+                .contact__value {
+                    .btn {
+                        cursor: normal;
+                    }
+                }
+            }
+
+            .contact__value {
+                width: 100%;
+                display: inline-block;
+            }
+
+            .responsibilities {
+                display: flex;
+                align-items: center;
+                flex-flow: row wrap;
+
+                li {
+                    margin-right: 1rem;
+                    padding: 0.7rem 1.5rem;
+                    background-color: $color-primary-1;
+                    @include border-r-sm;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+}
+
+// PROPERTY >> PROPERTY-DETAIL >> PROP-DOC (DOCUMENTS)
+.property-detail {
+    .prop-doc {
+        &__item {
+            margin-bottom: 4rem;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .prop-doc__title {
+                font-size: 1.6rem;
+                font-weight: 600;
+                margin-bottom: 2rem;
+            }
+
+            .prop-doc__table {
+                font-size: 1.4rem;
+                width: 100%;
+
+                th {
+                    font-weight: 600;
+                }
+
+                tr,
+                th,
+                td {
+                    display: inline-block;
+                    text-align: left;
+                }
+
+                tr {
+                    width: 100%;
+                    padding: 1.5rem 2rem;
+                    margin-bottom: 1.5rem;
+                }
+
+                thead {
+                    display: inline-block !important;
+                    width: 100%;
+
+                    tr {
+                        background-color: $color-secondary-1;
+                    }
+                }
+
+                tbody {
+                    tr {
+                        background-color: $color-tertiary-4;
+                    }
+                }
+
+                .doc-name {
+                    width: 25%;
+                }
+
+                .doc-mby {
+                    width: 25%;
+                }
+
+                .doc-status {
+                    width: 35%;
+                }
+
+                .doc-download {
+                    width: 15%;
+                    display: inline-flex;
+                    justify-content: flex-end;
+
+                    img {
+                        padding-right: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// PROPERTY >> PROPERTY-DETAIL >> PROP-LEGALINFO
+.property-detail {
+    .prop-legalinfo {
+        &__head {
+            margin-bottom: 2rem;
+
+            h3 {
+                margin-bottom: 0.5rem;
+            }
+        }
+
+        &__list {
+            width: 100%;
+
+            .list-primary {
+                display: flex;
+                align-items: flex-start;
+
+                &__left {
+                    width: 40%;
+                }
+
+                &__right {
+                    width: 60%;
+                }
+            }
+        }
+    }
+
+}
+
+.property-detail {
+    .property-detail__nav {
+        .card-primary {
+            padding: 0 !important;
+        }
+
+        .prop-nav-item {
+            position: relative;
+
+            a {
+                padding: 2rem 2.5rem;
+                width: 100%;
+                display: inline-block;
+                margin-top: -1px;
+                margin-left: -1px;
+                //position: absolute;
+                // width: initial;
+                // left: -1px;
+                // right: -1px;
+                // top: -1px;
+
+                &.active {
+                    background-color: $color-primary-1;
+                    width: 101%;
+
+                    //position: absolute;
+                    //width: initial;
+                    //left: -1px;
+                    //right: -1px;
+                    //top: -1px;
+                }
+            }
+
+            &.active {
+                position: relative;
+            }
+        }
+    }
+}
+
+// PROPERTY >> PROPERTY-DETAIL >> PROPERTY-POLICY
+.property-detail {
+    .property-policy {
+        .card-secondary {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+        }
+
+        &__title {
+            margin-bottom: 1rem;
+        }
+
+        &__detail {
+            color: $color-tertiary-3;
+
+            h4 {
+                font-size: 1.6rem;
+                font-weight: 500;
+                margin-bottom: 0.5rem;
+            }
+
+            p {
+                font-size: 1.3rem;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+// PROPERTY >> PROPERTY-DETAIL >> ROOM-TYPE
+.property-detail {
+    .room-type {
+        .card-secondary {}
+
+        .room-type__title {
+            display: flex;
+            align-items: center;
+
+            p {
+                padding-right: 1rem;
+            }
+
+            margin-bottom: 1rem;
+        }
+
+        .room-type__info {
+            span {
+                display: inline-block;
+            }
+
+            span:last-child {
+                padding-left: 1rem;
+            }
+        }
+    }
+}
+
+// PROPERTY >> PROPERTY-DETAIL >> ROOM-TYPE
+.property-detail {
+    .property-photos {
+        .property-photos__filter {
+            .react-tabs__tab--selected {
+                color: $color-primary-1;
+            }
+
+            .filter-nav {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                flex-flow: row wrap;
+                margin-bottom: 4rem;
+
+                &__item {
+                    background: transparent;
+                    margin: 0 2rem 1rem 0
+                }
+
+                li {
+                    font-size: 1.4rem;
+                    padding-right: 1rem;
+                    cursor: pointer;
+                }
+            }
+
+            .filter-result {
+                .filter-prop-photos {
+                    display: flex;
+                    justify-content: flex-start;
+                    flex-flow: row wrap;
+
+                    &__item {
+                        overflow: hidden;
+                        margin-bottom: 2rem;
+                        cursor: pointer;
+                        @include transition-delay-sm;
+
+                        margin-left: 1rem;
+                        margin-right: 1rem;
+                        position: relative;
+
+                        &:hover {
+                            opacity: 0.75;
+                        }
+
+                        img {
+                            max-width: 100%;
+                            max-height: 100%;
+                            @include border-r-sm;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    // IMAGE-GALLERY
+    .admin-image-gallery {
+        .photo-filter-nav {
+            &__item {}
+        }
+    }
+}

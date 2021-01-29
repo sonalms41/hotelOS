@@ -1,0 +1,81 @@
+// SECTION-PROPERTY
+.section-property {
+    .section-body {
+       
+
+  .row-1{
+
+        .row-1__col-1 {
+            width: 80%;
+            padding-right: 3rem;
+
+            a {
+                width: 100%;
+            }
+
+            // PROPERTY-STATUS-CARD
+            .property-status-card {
+                padding: 4rem;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                margin-bottom: 3rem;
+                min-height: 17rem;
+                @include border-r-sm;
+
+                .property-status-card__col-1 {
+                    margin-right: 2rem;
+                }
+
+                .property-type {
+                    color: $color-best;
+                    font-weight: 500;
+                    font-size: 1.6rem;
+                }
+
+                .property-status-card__col-2 {}
+            }
+        }
+
+        .row-1__col-2 {
+            width: 20%;
+            background-color: $color-secondary-2;
+            border: 1px dashed $color-tertiary-2;
+            margin-bottom: 3rem;
+            display: flex;
+            align-items: center;
+            flex-flow: column;
+            justify-content: center;
+            @include border-r-sm;
+
+            h2 {
+                color: #eb6060 !important;
+                text-align: center;
+            }
+        }
+    }
+    .row-2{
+        &__col-1{
+            width: 80%;
+            padding-right: 3rem;
+            a{
+                width: 100%;
+            }
+        .commission-card{
+            width: 100%;
+            background-color: #B921D2;
+
+            padding: 4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+    min-height: 17rem;
+        }
+        }
+        &__col-2{
+
+        }
+    }
+    }
+}

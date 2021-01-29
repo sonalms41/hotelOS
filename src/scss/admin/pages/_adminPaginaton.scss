@@ -1,0 +1,24 @@
+.admin-pagination{
+    .pagination-ul{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        li{
+            margin-right: 0.3rem;
+            &.active{
+                a{
+                    color: #fff !important;
+                }
+            }
+            a{
+            border: 1px solid #31394e;
+            background: #2b3244;
+        display: inline-block;
+        cursor: pointer;
+    padding: 1rem;
+&:hover{
+    color: #fff !important;
+}}
+        }
+    }
+}

@@ -1,0 +1,42 @@
+#admin-page-main{
+    .web-content{
+        &__nav{
+            .react-tabs{
+               &__tab-list{
+                   display: flex;
+                   align-items: center;
+                   justify-content: flex-start;
+                   flex-flow: row wrap;
+                   margin-bottom: 2rem;
+                   background-color: #252b3b;
+                   border: 1px solid #31394e;
+                   width: 100%;
+                   padding: 1.5rem 2.5rem;
+                   @include border-r-sm;
+                .react-tabs__tab{
+                    @include border-r-0;
+                    line-height: initial;
+                    font-size: 1.4rem;
+                    color: #fff;
+                    border: none;
+                }
+                .react-tabs__tab--selected{
+                    background-color: #5664d2;
+
+                }
+            }
+               
+            }
+        }
+        &__editor{
+            margin-bottom: 2.5rem;
+            .ck-editor__main{
+                min-height: 20rem;
+                color: #000;
+                .ck-content{
+                    min-height: 20rem;
+                }
+            }
+        }
+    }
+}

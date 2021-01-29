@@ -1,0 +1,34 @@
+// ADMIN CHECKBOX-TAB
+.admin-checkbox-tab {
+	&__checkbox {
+		display: none;
+	}
+
+	&__label {
+		cursor: pointer;
+		display: inline-flex;
+		padding: 1.5rem 1.5rem;
+		background: $color-secondary-3;
+		margin-bottom: 2rem;
+		position: relative;
+		z-index: 200;
+		color: $color-best;
+
+		&::after {
+			content: "";
+			height: 100%;
+			width: 100%;
+			//background: $color-secondary-3;
+			position: absolute;
+			z-index: 600;
+			left: 0;
+			top: 0;
+			z-index: -1;
+			color: $color-best;
+		}
+	}
+
+	.admin-checkbox-tab__checkbox:checked ~ .admin-checkbox-tab__label:after {
+		background: $color-primary-1;
+	}
+}

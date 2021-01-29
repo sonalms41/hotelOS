@@ -1,0 +1,17 @@
+.anchor {
+	cursor: pointer;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+.anchor-overlay {
+	position: absolute;
+	display: block;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-indent: -9999px;
+	z-index: 1000;
+	cursor: pointer;
+}

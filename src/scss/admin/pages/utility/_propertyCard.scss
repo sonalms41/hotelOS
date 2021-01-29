@@ -1,0 +1,63 @@
+// PROPERTY
+.propery-card {
+    margin-bottom: 2.5rem;
+
+    .card-primary {
+        padding: 2.2rem;
+    }
+
+    .card-row {
+        border-bottom: 1px solid $color-secondary-1;
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+        color: #eee;
+
+        &:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        p {
+            font-size: 1.4rem;
+        }
+
+        .property__title {}
+
+        .property__address {
+            margin-bottom: 1rem;
+        }
+
+        .property__id {
+            display: flex;
+            align-items: center;
+
+            img {
+                margin-left: 1rem;
+            }
+        }
+
+        .col-wrapper {
+            justify-content: space-between;
+
+            .col-item {
+                text-align: center;
+
+                span {
+                    display: block;
+                    text-align: center;
+                }
+
+                .info-item {
+                    color: #cbcbcb;
+                    font-size: 1.4rem;
+                    display: inline-block;
+                }
+
+                p {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}

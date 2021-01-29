@@ -1,0 +1,54 @@
+@import "./variables";
+
+@import "mixins/media-query", "mixins/transition-delay", "./mixins/transform",
+	"./mixins/border-radius", "./mixins/boxShadow";
+
+// FONTS
+@import "./fonts/iconFont";
+
+// UI
+@import "./ui/formField/input";
+
+@import "./pages/login", "./pages/adminHeader", "./pages/adminnav",
+	"./pages/utility/cardPrimary", "./pages/utility/cardSecondary",
+	"./pages/sectionHeader", "./pages/dashboard/dashboard",
+	"./pages/utility/formField", "./pages/utility/admin/sectionHeader.scss",
+	"./pages/adminMain", "./pages/property/propertyReconcilation",
+	// PROPERTY
+		"./pages/property/propertyStatus",
+	"./pages/property/addProperty", "./pages/property/propertyRegister",
+	"./pages/property/propertyDetail", "./pages/property/adminPropertyEdit",
+	"./pages/property/adminPropList",
+	// PROPERTY-UTILITY
+		"./pages/utility/propertyCard",
+	// USER
+		"./pages/user/userIndex",
+	"./pages/user/verifiedUser/verifiedUserIndex.scss",
+	"./pages/user/verifiedUser/verifiedUserAnalytics.scss",
+	"./pages/utility/adminCheckBoxTab", "./pages/utility/adminFormFields",
+	"./pages/utility/adminTable", "./pages/utility/button",
+	"./pages/adminPaginaton", "./pages/adminModal",
+	"./pages/property/adminCommission", "./pages/adminReservationWebContent",
+	// GUEST
+		"./pages/adminGuest",
+	// UTILITY
+		"./pages/utility/adminToggleSwitch",
+	"./pages/utility/button", "./pages/utility/adminConfirmationDialog",
+	"./utility/width", "./utility/flex", "./utility/margin", "./utility/anchor",
+	"./utility/statusCard",
+	// ADMIN-MASTER
+		"./pages/adminMaster";
+
+@import "./base";
+/***********************************************
+     UTILITIES
+ ************************************************/
+@import "./utility/headings", "./utility/col", "./utility/formField",
+	"./utility/listPrimary", "./utility/flexStyle", "./utility/border",
+	"./utility/notificationText", "./utility/connectingImageGallery";
+
+// FOR-"react-image-gallery"
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+
+// For content loading placeholder
+@import "animation/contentLoadingPlaceholder";

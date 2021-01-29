@@ -1,0 +1,39 @@
+@media only screen and (max-width: 1200px) {
+    .right_menu .today_date { display: none }
+    .right_menu .hotel_profileAvatar span { display: none }
+    .dash__logo { display: none }
+    .dash__logo__small { display: block }
+    .header_search { margin-left: 12px; }
+    .header_search input { width: 220px !important; }
+    .header_searchBox{
+        z-index: 999;
+        position: fixed;
+        top: 48px;
+        left: 117px;
+        width: 220px;
+    }
+    .header_searchBox a {
+        font-size: 12px;
+        padding: 0 8px;
+    }
+    .header_searchBox p { font-size: 12px; padding: 0 8px; }
+
+    .sidebar_wrapper {
+        width: 232px;
+        opacity: 1;
+        transition: opacity .3s linear;
+        -webkit-box-shadow: 1px 1px 1px 0px rgba(186,169,169,0.75);
+        -moz-box-shadow: 1px 1px 1px 0px rgba(186,169,169,0.75);
+        box-shadow: 1px 1px 1px 0px rgba(186,169,169,0.75);
+    }
+    .sidebar_menuTitle { font-size: 10px }
+
+    .right_panel { display: none }
+
+    .page_contents {
+        padding: 90px 16px 16px 16px;
+        transition: padding .3s;
+    }
+    .page_contents_pright { padding-right: 0 }
+
+}

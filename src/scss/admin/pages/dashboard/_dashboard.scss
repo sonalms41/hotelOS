@@ -1,0 +1,99 @@
+.section-dashboard {
+    .card-primary {
+        padding: 2.5rem;
+        background-color: #252B3B;
+    }
+
+    .heading-secondary {
+
+        margin-bottom: 2.5rem;
+    }
+
+    .heading-tertiary {
+        border-bottom: none;
+    }
+
+    .dashboard-add-prop {
+        .form__group-btn {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+    }
+
+    .dashboard-content {
+
+        &__table {
+            width: 100%;
+
+            th,
+            td {
+                display: inline-block;
+                color: #CBCBCB;
+            }
+
+            tr {
+                @include border-r-sm;
+                display: inline-block;
+                width: 100%;
+                margin-bottom: 1.5rem;
+
+                .prop-sn {
+                    width: 5%;
+                }
+
+                .prop-name {
+                    width: 30%;
+                }
+
+                .prop-max-capacity,
+                .prop-min-capacity {
+                    width: 25%;
+                }
+
+                .prop-control {
+                    width: 15%;
+                    display: inline-flex;
+                    justify-content: flex-end;
+
+                    span {
+                        display: inline-block;
+                    }
+
+                    .pop-edit {
+                        padding-right: 1rem;
+                    }
+                }
+            }
+
+
+            thead {
+                tr {
+                    background-color: $color-tertiary-4;
+                    padding: 2rem 2.5rem;
+                }
+
+                th {
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                    text-align: left;
+                }
+            }
+
+            tbody {
+                tr {
+                    background-color: $color-secondary-3;
+                    border: 1px solid $color-secondary-4;
+                    padding: 1rem 2.5rem;
+                }
+
+                td {
+                    font-size: 1.4rem;
+                }
+
+
+            }
+        }
+    }
+}

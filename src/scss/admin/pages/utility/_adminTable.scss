@@ -1,0 +1,88 @@
+// ADMIN-TABLE
+.admin-table {
+	width: 100%;
+	font-weight: 300;
+
+	.action{
+		span{
+			cursor: pointer;
+		}
+		.delet{
+			position: relative;
+		}
+	}
+
+	tr,
+	tbody,
+	thead {
+		width: 100%;
+	}
+
+	tr {
+		width: 100%;
+		display: inline-block;
+		padding: 1.5rem 2rem;
+		margin-bottom: 1rem;
+		@include border-r-sm;
+		display: flex;
+	}
+
+	tr,
+	th,
+	td {
+		font-size: 1.4rem;
+		font-weight: 300;
+	}
+
+	thead {
+		tr {
+			background: $color-tertiary-4;
+		}
+	}
+
+	td,
+	th {
+	}
+
+	tbody {
+		tr {
+			background: $color-secondary-3;
+			border: 1px solid $color-secondary-7;
+		}
+	}
+
+	.table__col-1 {
+		width: 10%;
+	}
+
+	.table__col-2 {
+		width: 20%;
+	}
+
+	.table__col-3 {
+		width: 20%;
+	}
+
+	.table__col-4 {
+		width: 20%;
+	}
+
+	.table__col-5 {
+		width: 20%;
+	}
+
+	.table__col-groupaction {
+		display: inline-flex;
+		justify-content: flex-end;
+
+		a {
+			cursor: pointer;
+			display: inline-block;
+			margin-right: 2rem;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}

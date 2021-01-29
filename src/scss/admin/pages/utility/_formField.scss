@@ -1,0 +1,55 @@
+.form {
+    &__group {
+        position: relative;
+        width: 100%;
+        z-index: 500;
+        margin-bottom: 2rem;
+
+        label {
+            position: absolute;
+            z-index: 600;
+            top: 1rem;
+            left: 2rem;
+            font-size: 1.4rem;
+            color: $color-tertiary-2;
+            font-weight: 500;
+        }
+
+        input {
+            width: 100%;
+            border: 1px solid $color-secondary-4;
+            background-color: $color-secondary-3;
+            height: 6rem;
+            padding: 3.5rem 2rem 1.5rem;
+            color: $color-best;
+            font-weight: 300;
+            @include border-r-sm;
+        }
+
+        ::placeholder {
+            /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: $color-tertiary-2;
+            font-size: 1.4rem;
+            font-weight: 300;
+            opacity: 0.3;
+            /* Firefox */
+        }
+
+        :-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: $color-tertiary-2;
+            font-size: 1.4rem;
+            font-weight: 300;
+            opacity: 0.3;
+        }
+
+        ::-ms-input-placeholder {
+            /* Microsoft Edge */
+            color: $color-tertiary-2;
+            font-size: 1.4rem;
+            font-weight: 300;
+            opacity: 0.3;
+        }
+    }
+
+}
